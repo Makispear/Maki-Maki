@@ -1,0 +1,11 @@
+import type { FC } from 'react'
+import './App.css'
+
+const App: FC = () => {
+  return <div>
+    <h1>Maki Maki</h1>
+  </div>
+
+}
+
+export default App
