@@ -1,9 +1,10 @@
 import type { FC } from 'react'
 import './App.css'
+import LandingPage from './Pages/LandingPage'
 
 const App: FC = () => {
   return <div>
-    <h1>Maki Maki</h1>
+    <LandingPage />
   </div>
 
 }
