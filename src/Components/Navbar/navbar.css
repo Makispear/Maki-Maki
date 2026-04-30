@@ -143,6 +143,10 @@
     align-items: center;
   }
 
+  .nav-hamburger-menu a {
+    color: var(--text-h);
+  }
+
   .nav-open {
     display: flex;
   }
