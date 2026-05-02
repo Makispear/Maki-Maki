@@ -1,0 +1,57 @@
+.technologies-section {
+  border-top: 1px solid rgb(29, 29, 29);
+  border-bottom: 1px solid rgb(66, 65, 65);
+  padding: 40px 40px;
+  grid-auto-flow: row;
+  gap: 40px;
+  overflow: hidden;
+  width: 90%;
+  justify-self: center;
+}
+
+.technologies-section img {
+  user-select: none;
+}
+
+.technologies-list {
+  display: flex;
+  padding-block: 30px;
+  scrollbar-width: none;
+  animation: scroll 15s linear infinite;
+}
+
+.technologies-list:hover {
+  animation-play-state: paused;
+}
+
+.technologies-list > div {
+  min-width: 150px;
+}
+
+.technologies-section button {
+  /* background-color: transparent; */
+  border: none;
+  border-radius: 4px;
+  font-weight: 800;
+  outline: 1px solid transparent;
+  transition: all 0.2s linear;
+}
+
+.technologies-section button:hover {
+  transform: scale(120%);
+  cursor: pointer;
+}
+
+.copy {
+  width: 30px;
+  justify-self: center;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
