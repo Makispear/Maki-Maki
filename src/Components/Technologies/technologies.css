@@ -9,6 +9,10 @@
   justify-self: center;
 }
 
+.technologies-section h2 {
+  text-align: center;
+}
+
 .technologies-section img {
   user-select: none;
 }

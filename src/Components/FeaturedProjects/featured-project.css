@@ -1,0 +1,73 @@
+.featured-projects-section {
+  margin-top: 40px;
+  border-bottom: 2px solid var(--text);
+}
+
+.featured-projects-section > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
+  padding: 40px 40px;
+  gap: 20px;
+}
+
+.featured-projects-section h2 {
+  justify-self: center;
+  grid-column: 1 / -1;
+}
+
+.featured-projects-section .single-project-div {
+  border: 2px solid var(--border);
+  display: grid;
+  padding: 20px;
+  border-radius: 5px;
+  gap: 20px;
+  box-shadow: 0 4px 10px var(--accent-border);
+  transition: all 0.2s linear;
+}
+
+.featured-projects-section .single-project-div:hover {
+  box-shadow: 0 10px 20px var(--accent-border);
+}
+
+.featured-projects-section h3 {
+  text-align: center;
+  color: var(--text-h);
+}
+
+.featured-projects-section .tech-chip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.featured-projects-section span {
+  padding: 5px;
+  border: 1px solid var(--accent-border);
+  background-color: var(--accent-border);
+  border-radius: 4px;
+  color: var(--text-h);
+}
+
+.featured-projects-section a {
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: bold;
+  -webkit-text-stroke: 1px transparent;
+  transition: all 0.2s linear;
+}
+
+.view-all {
+  display: grid;
+  place-items: center;
+  align-self: center;
+  max-width: 50%;
+  background-color: transparent;
+  border-color: var(--accent);
+  color: var(--accent);
+  outline: 1px solid var(--accent);
+}
+
+.view-all:hover {
+  background-color: var(--accent-bg);
+  border: 1px solid var(--accent);
+}
