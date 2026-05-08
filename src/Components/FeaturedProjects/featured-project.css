@@ -16,12 +16,12 @@
 }
 
 .featured-projects-section .single-project-div {
-  border: 2px solid var(--border);
+  border: 2px solid transparent;
   display: grid;
   padding: 20px;
   border-radius: 5px;
   gap: 20px;
-  box-shadow: 0 4px 10px var(--accent-border);
+  box-shadow: 0 2px 5px var(--accent-border);
   transition: all 0.2s linear;
 }
 
