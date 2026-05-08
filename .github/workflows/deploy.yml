@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - develop
+  repository_dispatch:
+    types: [infra_updated]
 
 jobs:
   deploy:
@@ -34,6 +36,8 @@ jobs:
       - name: Deploy to S3
         # Uses the variable synced by your Terraform repo
         run: aws s3 sync dist/ s3://${{ vars.S3_BUCKET_NAME }} --delete
+      - name: Wait for CloudFront
+        run: sleep 180
 
       - name: Invalidate CloudFront
         # Uses the secret synced by your Terraform repo
