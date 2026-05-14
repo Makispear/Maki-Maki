@@ -49,11 +49,8 @@ const Technologies: React.FC = () => {
     navigator.clipboard.writeText(text);
   };
 
-  const [copied, setCopied] = useState(false);
   const handleCopyClick = () => {
     copyToClipBoard();
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
   };
 
   const [isDark, setIsDark] = useState(
@@ -74,19 +71,11 @@ const Technologies: React.FC = () => {
       <h2>
         TECHNOLOGIES{" "}
         <button onClick={handleCopyClick}>
-          {copied ? (
-            "Copied!"
-          ) : (
-            <img
-              className="copy"
-              src={isDark ? copydark : copydark}
-              alt="Copy"
-            />
-          )}
+          <img className="copy" src={isDark ? copydark : copydark} alt="Copy" />
         </button>
       </h2>
       <div className="technologies-list">
-        {[...techstack, ...techstack, ...techstack].map((tech) => (
+        {[...techstack].map((tech) => (
           <div key={tech.name}>
             <img src={tech.icon} alt={tech.name} />
             <p>{tech.name}</p>
