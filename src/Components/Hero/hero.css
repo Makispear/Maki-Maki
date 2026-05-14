@@ -95,6 +95,7 @@
   height: 100%;
   background: url("../../assets/Portrait/hero-ph.jpeg") center center no-repeat;
   background-size: cover;
+  transform: scaleX(-1);
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -116,7 +117,7 @@
   }
 
   .hero-section > div {
-    min-width: 400px;
+    min-width: 300px;
     min-height: 400px;
   }
 

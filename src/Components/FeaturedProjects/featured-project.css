@@ -7,7 +7,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
   padding: 40px 40px;
-  gap: 20px;
+  gap: 40px;
 }
 
 .featured-projects-section h2 {
@@ -15,22 +15,25 @@
   grid-column: 1 / -1;
 }
 
-.featured-projects-section .single-project-div {
-  border: 2px solid transparent;
-  display: grid;
+.featured-projects-section div.single-project-div {
+  outline: 1px solid var(--text);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 20px;
   border-radius: 5px;
   gap: 20px;
-  box-shadow: 0 2px 5px var(--accent-border);
-  transition: all 0.2s linear;
+  text-align: start;
+  /* transition: all 0.2s linear; */
 }
 
 .featured-projects-section .single-project-div:hover {
-  box-shadow: 0 10px 20px var(--accent-border);
+  outline: 2px solid var(--accent);
+  /* border-color: var(--accent-border); */
 }
 
 .featured-projects-section h3 {
-  text-align: center;
+  text-align: initial;
   color: var(--text-h);
 }
 
@@ -41,7 +44,7 @@
 }
 
 .featured-projects-section span {
-  padding: 5px;
+  padding: 1px;
   border: 1px solid var(--accent-border);
   background-color: var(--accent-border);
   border-radius: 4px;
@@ -53,21 +56,10 @@
   color: var(--accent);
   font-weight: bold;
   -webkit-text-stroke: 1px transparent;
-  transition: all 0.2s linear;
+  /* transition: all 0.2s linear; */
+  width: fit-content;
 }
 
-.view-all {
-  display: grid;
-  place-items: center;
-  align-self: center;
-  max-width: 50%;
-  background-color: transparent;
-  border-color: var(--accent);
-  color: var(--accent);
-  outline: 1px solid var(--accent);
-}
-
-.view-all:hover {
-  background-color: var(--accent-bg);
-  border: 1px solid var(--accent);
+.gh-icon {
+  max-width: 50px;
 }

@@ -1,7 +1,12 @@
 import "../../index.css";
 import "./featured-project.css";
+import ghblack from "../../assets/icons/GitHub_black.png";
+import ghwhite from "../../assets/icons/GitHub_white.png";
 
 const FeaturedProjects: React.FC = () => {
+  const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  console.log("isDark", isDark);
+
   return (
     <section className="featured-projects-section">
       <h2>Featured Projects</h2>
@@ -23,7 +28,13 @@ const FeaturedProjects: React.FC = () => {
             <span>TailwindCSS</span>
             <span>NodeJS</span>
           </div>
-          <a href="https://github.com/brentocracy/kindly">View Project &gt;</a>
+          <a target="_blank" href="https://github.com/brentocracy/kindly">
+            <img
+              className="gh-icon"
+              src={isDark ? ghwhite : ghblack}
+              alt="github icon"
+            />
+          </a>
         </div>
         <div className="single-project-div">
           <h3>Coderz United</h3>
@@ -42,14 +53,18 @@ const FeaturedProjects: React.FC = () => {
             <span>TailwindCSS</span>
             <span>NodeJS</span>
           </div>
-          <a href="https://github.com/Makispear/CODERZ-UNITED">
-            View Project &gt;
+          <a target="_blank" href="https://github.com/Makispear/CODERZ-UNITED">
+            <img
+              className="gh-icon"
+              src={isDark ? ghwhite : ghblack}
+              alt="github icon"
+            />
           </a>
         </div>
         <div className="single-project-div">
           <h3>HomeRoom</h3>
           <p>
-            Eliminated the lack of effective class management and parent–teacher
+            Eliminated the lack of effective class management and parent-teacher
             communication by building a centralized portal for organizing
             rosters, lesson plans, and grade records within a structured data
             architecture.
@@ -62,8 +77,12 @@ const FeaturedProjects: React.FC = () => {
             <span>ExpressJS</span>
             <span>MySQL</span>
           </div>
-          <a href="https://github.com/michellewehr/homeroom">
-            View Project &gt;
+          <a target="_blank" href="https://github.com/michellewehr/homeroom">
+            <img
+              className="gh-icon"
+              src={isDark ? ghwhite : ghblack}
+              alt="github icon"
+            />
           </a>
         </div>
         <div className="single-project-div">
@@ -77,21 +96,18 @@ const FeaturedProjects: React.FC = () => {
           <div className="tech-chip">
             <span>HTML</span>
             <span>CSS</span>
-            <span>Bulma CSS Framework</span>
+            <span>Bulma CSS</span>
             <span>JavaScript</span>
-            <span>Server-side APIs</span>
+            <span>APIs</span>
           </div>
-          <a href="https://github.com/Makispear/Anytime-Books">
-            View Project &gt;
+          <a target="_blank" href="https://github.com/Makispear/Anytime-Books">
+            <img
+              className="gh-icon"
+              src={isDark ? ghwhite : ghblack}
+              alt="github icon"
+            />
           </a>
         </div>
-
-        <a
-          className="single-project-div view-all"
-          href="https://github.com/Makispear?tab=repositories"
-        >
-          <p>View All &gt;</p>
-        </a>
       </div>
     </section>
   );

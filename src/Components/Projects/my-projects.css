@@ -1,0 +1,45 @@
+.projects-section {
+  padding: 40px;
+}
+
+.projects-section .my-projects-div {
+  padding: 60px 0;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.projects-section .my-projects-div h1 {
+  color: var(--text-h);
+  font-size: 3rem;
+}
+
+.projects-section .my-projects-div p {
+  width: 60%;
+}
+
+.toggles-div {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.toggles-div button {
+  padding: 10px 20px;
+  border: 1px solid var(--text);
+  border-radius: 5px;
+  color: var(--text);
+  font-weight: bold;
+  background-color: transparent;
+  transition: all 0.2s linear;
+}
+
+/* .toggles-div button:active {
+    color: var(--accent-border);
+} */
+
+.toggles-div button:hover {
+  background-color: var(--accent-border);
+  border-color: var(--accent-border);
+}
