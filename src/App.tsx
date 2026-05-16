@@ -1,5 +1,5 @@
 import type { FC } from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import LandingPage from "./Pages/LandingPage";
 import Projects from "./Pages/Projects";
