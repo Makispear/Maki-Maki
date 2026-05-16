@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
                 <li><a href="/contact">Contact</a></li>
                 <li className='mobile-only'><a href="/">Hire Me</a></li>
             </ol>
-            <a className='desktop-only hire-me' href="mailto:makiaboabidamaki@gmail.com" target="_blank" rel="noopener noreferrer">Hire Me</a>
+            <a className='desktop-only hire-me' href="mailto:makiaboabidamaki@gmail.com">Hire Me</a>
         </div>
         <div className='hamburger-menu' onClick={toggleHamburger}>
             <span className={isHamburgerOpen ? 'upper-bread' : ''}></span>
