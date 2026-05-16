@@ -45,6 +45,7 @@
 .copy {
   width: 30px;
   justify-self: center;
+  border-radius: 4px;
 }
 
 @keyframes scroll {

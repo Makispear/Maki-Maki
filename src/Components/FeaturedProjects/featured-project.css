@@ -1,6 +1,6 @@
 .featured-projects-section {
   margin-top: 40px;
-  border-bottom: 2px solid var(--text);
+  border-bottom: 1px solid var(--border);
 }
 
 .featured-projects-section > div {
@@ -27,14 +27,9 @@
   /* transition: all 0.2s linear; */
 }
 
-.featured-projects-section .single-project-div:hover {
-  outline: 2px solid var(--accent);
-  /* border-color: var(--accent-border); */
-}
-
 .featured-projects-section h3 {
   text-align: initial;
-  color: var(--text-h);
+  color: var(--accent);
 }
 
 .featured-projects-section .tech-chip {
@@ -45,7 +40,7 @@
 
 .featured-projects-section span {
   padding: 1px;
-  border: 1px solid var(--accent-border);
+  outline: 3px solid var(--accent-border);
   background-color: var(--accent-border);
   border-radius: 4px;
   color: var(--text-h);
