@@ -69,10 +69,10 @@
   position: absolute;
   left: 20px;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(50%);
 
-  background: var(--accent-border);
-  color: var(--text-h);
+  background: green;
+  color: white;
   padding: 4px 8px;
   font-size: 12px;
   border-radius: 6px;
