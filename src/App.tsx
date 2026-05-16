@@ -11,7 +11,7 @@ const App: FC = () => {
       <Navbar />
 
       <Routes>
-        <Route path="/" element={<Navigate to="/home" replace />} />
+        <Route path="/" element={<LandingPage />} />
         <Route path="/home" element={<LandingPage />} />
         <Route path="/projects" element={<Projects />} />
         {/* <Route path="/experience" element={<Experience />} />
