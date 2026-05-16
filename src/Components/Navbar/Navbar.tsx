@@ -15,6 +15,10 @@ const Navbar: React.FC = () => {
             <h1>M<span>/</span></h1>
         </div>
         <div className={'nav nav-hamburger-menu ' + (isHamburgerOpen ? 'nav-open' : 'nav-closed')}>
+            <div className="status-wrapper">
+                <span className="status-dot"></span>
+                <span className="status-text">Available for work</span>
+            </div>
             <ol>
                 <li><a href="/">Home</a></li>
                 <li><a href="/projects">Projects</a></li>
