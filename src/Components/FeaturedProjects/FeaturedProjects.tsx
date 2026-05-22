@@ -85,7 +85,7 @@ const FeaturedProjects: React.FC = () => {
             />
           </a>
         </div>
-        <div className="single-project-div">
+        {/* <div className="single-project-div">
           <h3>Anytime Books</h3>
           <p>
             a solution to book lovers' continuous search for the next read. Our
@@ -107,7 +107,7 @@ const FeaturedProjects: React.FC = () => {
               alt="github icon"
             />
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );
